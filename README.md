@@ -1,10 +1,10 @@
 # KCFinder web file manager
 
-## Original
+### Original
 http://kcfinder.sunhater.com  
 Pavel Tzonkov (sunhater@sunhater.com)
 
-## Fork
+### Fork
 Forked by Landlord Web Solutions to add support for using Amazon S3 as file storage
 
 ## Overview
