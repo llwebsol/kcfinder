@@ -1,6 +1,11 @@
 # KCFinder web file manager
+
+## Original
 http://kcfinder.sunhater.com  
 Pavel Tzonkov (sunhater@sunhater.com)
+
+## Fork
+Forked by Landlord Web Solutions to add support for using Amazon S3 as file storage
 
 ## Overview
 KCFinder is free open-source replacement of CKFinder web file manager. It can be integrated into FCKeditor, CKEditor, and TinyMCE WYSIWYG web editors (or your custom web applications) to upload and manage images, flash movies, and other files that can be embedded into an editor's generated HTML content.
