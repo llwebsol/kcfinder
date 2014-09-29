@@ -21,7 +21,7 @@ spl_autoload_register(function($path) {
     list($ns, $class) = $path;
 
     if ($ns == "kcfinder") {
-        if (in_array($class, array("uploader", "browser", "minifier", "session")))
+        if (in_array($class, array("uploader", "browser", "minifier", "storage", "session")))
             require "core/class/$class.php";
         elseif (file_exists("core/types/$class.php"))
             require "core/types/$class.php";

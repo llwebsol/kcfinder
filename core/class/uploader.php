@@ -19,6 +19,10 @@ class uploader {
 /** Release version */
     const VERSION = "3.20-test2";
 
+/** Storage object for filesystem or cloud operations
+ * @var storage */
+    protected $storage = null;
+
 /** Config session-overrided settings
   * @var array */
     protected $config = array();
@@ -111,6 +115,9 @@ class uploader {
         $session = new session("conf/config.php");
         $this->config = $session->getConfig();
         $this->session = &$session->values;
+
+        // STORAGE SETUP
+        $this->storage = new storage($this->config);
 
         // IMAGE DRIVER INIT
         if (isset($this->config['imageDriversPriority'])) {
